@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: white;
+  background: var(--background);
+  background-image: url("/bg_img.jpg");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .navbar-items {
+    @apply font-sans font-medium text-base text-white;
+  }
+
+  .hexagon {
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  }
+
+  .typewriter-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .typewriter-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #ffffff;
+  }
+}
