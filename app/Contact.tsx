@@ -54,8 +54,8 @@ const Contact = () => {
         Contact
       </h4>
       <p className="max-w-md w-full p-6 font-bold text-justify">
-        Have a question or want to work together? Leave your details and I'll
-        get back to you as soon as possible
+        Have a question or want to work together? Leave your details and
+        I&apos;ll get back to you as soon as possible
       </p>
       <form
         onSubmit={handleSubmit}

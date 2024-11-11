@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -7,7 +8,7 @@ const HomePage = () => {
         <div className="flex flex-col items-center">
           <div className="typewriter-container">
             <h1 className="typewriter-text animate-typing delay-1000 text-5xl md:text-7xl xl:text-9xl text-transparent bg-custom-gradient bg-clip-text">
-              Hi, I'm Gokul
+              Hi, I&apos;m Gokul
             </h1>
           </div>
           <h2 className="text-3xl md:text-5xl xl:text-7xl mb-4">
@@ -85,10 +86,12 @@ const HomePage = () => {
           </button>
         </div>
 
-        <img
+        <Image
           className="hexagon w-3/4 h-auto grayscale md:w-1/3 xl:w-1/4"
-          src="profile-picture.jpeg"
+          src="/profile-picture.jpeg"
           alt="Profile Picture"
+          width="500"
+          height="700"
         />
       </div>
     </>
