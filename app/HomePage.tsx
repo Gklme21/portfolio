@@ -4,14 +4,14 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col justify-around items-center h-screen xl:flex-row">
+      <div className="flex flex-col justify-around items-center h-screen lg:flex-row">
         <div className="flex flex-col items-center">
           <div className="typewriter-container">
-            <h1 className="typewriter-text animate-typing delay-1000 text-5xl md:text-7xl xl:text-9xl text-transparent bg-custom-gradient bg-clip-text">
+            <h1 className="typewriter-text animate-typing delay-1000 text-5xl md:text-7xl lg:text-9xl text-transparent bg-custom-gradient bg-clip-text">
               Hi, I&apos;m Gokul
             </h1>
           </div>
-          <h2 className="text-3xl md:text-5xl xl:text-7xl mb-4">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl mb-4">
             Software Developer
           </h2>
           <div className="flex">
@@ -50,7 +50,7 @@ const HomePage = () => {
             </Link>
           </div>
 
-          <button className="flex justify-center items-center bg-custom-gradient mt-4 w-3/4 h-10 xl:w-1/3 rounded-3xl">
+          <button className="flex justify-center items-center bg-custom-gradient mt-4 w-3/4 h-10 lg:w-1/3 rounded-3xl">
             <a
               className="flex"
               href="Gokul_Marakkanam_Eggiar.pdf"
@@ -87,7 +87,7 @@ const HomePage = () => {
         </div>
 
         <Image
-          className="hexagon w-3/4 h-auto grayscale md:w-1/3 xl:w-1/4"
+          className="hexagon w-3/4 h-auto grayscale md:w-1/3 lg:w-1/4"
           src="/profile-picture.jpeg"
           alt="Profile Picture"
           width="500"
