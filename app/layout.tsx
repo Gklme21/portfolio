@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NavigationBar from "./NavBar";
 import Footer from "./Footer";
+import { GoogleAnalytics } from "./GoogleAnalytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
