@@ -54,7 +54,7 @@ const HomePage = () => {
             <a
               className="flex"
               href="Gokul_Marakkanam_Eggiar.pdf"
-              download="Gokul_Marakkanam_Eggiar.pdf"
+              download="Gokul_Marakkanam_Eggiar_5.pdf"
             >
               <svg
                 width="20"
